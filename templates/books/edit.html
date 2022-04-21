@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    
+<form action="/books/{{ book.id }}" method="post">
+    <div>
+        <label for="title">Title:</label>
+        <input type="text" name="title" id="title" value="{{ book.title }}" required autofocus>
+    </div>
+
+    <div>
+        <label for="author_first_name">Author's first name:</label>
+        <input type="text" name="author_first_name" id="author_first_name" value="{{ book.author.first_name }}" required>
+    </div>
+
+    <div>
+        <label for="author_last_name">Author's last name:</label>
+        <input type="text" name="author_last_name" id="author_last_name" value="{{ book.author.last_name }}" required>
+    </div>
+
+    <div>
+        <label for="year">Year:</label>
+        <input type="number" name="year" id="year" value="{{ book.year }}">
+    </div>
+
+    <button type="submit">Update Book</button>
+</form>
+
+{% endblock content %}
+
