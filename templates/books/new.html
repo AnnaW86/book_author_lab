@@ -7,28 +7,12 @@
       <label for="Title">Title:</label>
       <input type="text" id="title" name="title" placeholder="Title" required autofocus>
     </div>
-    
-    <div>
-        <!-- <div>
-            <label for="author_drop_down">Select an author:</label>
-            <select id="author_drop_down" name="author_id">
-                <option value="None">--</option>
-                {% for author in all_authors %}
-                
-                <option value="{{ author.id }}">{{ author.first_name }} {{ author.last_name }}</option>
-                
-                {% endfor %}
-            </select>
-        </div> -->
-        <div>
-            <!-- <p>Or enter a new one:</p> -->
-            <label for="author_first_name"> Author's first name:</label>
-            <input type="text" id="author_first_name" name="author_first_name" placeholder="First name">
-            <label for="author_last_name"> Author's last name:</label>
-            <input type="text" id="author_last_name" name="author_last_name" placeholder="Last name">
-        </div>
-        
-    </div>
+      <div>
+          <label for="author_first_name"> Author's first name:</label>
+          <input type="text" id="author_first_name" name="author_first_name" placeholder="First name">
+          <label for="author_last_name"> Author's last name:</label>
+          <input type="text" id="author_last_name" name="author_last_name" placeholder="Last name">
+      </div>
 
     <div>
       <label for="year">Year:</label>
